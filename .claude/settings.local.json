@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(cmd.exe:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(powershell.exe:*)",
+      "Bash(\"$PYTHON\":*)",
+      "Bash(./venv/Scripts/pip install:*)",
+      "Bash(curl:*)",
+      "Bash(./venv/Scripts/python.exe:*)",
+      "WebFetch(domain:www.topcrete.com)",
+      "Bash(rm:*)",
+      "Bash(venv/Scripts/python.exe:*)",
+      "Bash(taskkill:*)",
+      "Bash(venv/Scripts/pip install:*)",
+      "Bash(del:*)",
+      "Bash(venv/Scripts/python:*)",
+      "Bash(cmd:*)",
+      "Bash(cd \"C:\\\\Users\\\\afif\\\\Desktop\\\\Claude Projects\" && python -c \"\nwith open\\('pages/2_Chat_Detail.py', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\n\nreplacements = [\n    \\('st.success\\(\\\\\"✅ No follow-up needed\\\\\"\\)', 'st.success\\(\\\\\"No follow-up needed\\\\\"\\)'\\),\n    \\(\\\\\"'🇬🇧 {transl}</div>'\\\\\", \\\\\"'[EN] {transl}</div>'\\\\\"\\),\n    \\(\\\\\"'>🎙️ Voice note</div>'\\\\\", \\\\\"'>Voice note</div>'\\\\\"\\),\n    \\(\\\\\"'>🎙️ Voice note — import folder with media to play</div>'\\\\\", \\\\\"'>Voice note — import folder with media to play</div>'\\\\\"\\),\n    \\(\\\\\"f'📄 {fname}'\\\\\", \\\\\"f'Download: {fname}'\\\\\"\\),\n    \\(\\\\\"'>📎 {attached}</div>'\\\\\", \\\\\"'>Attachment: {attached}</div>'\\\\\"\\),\n    \\('st.error\\(\\\\\"Follow-Up Required\\\\\"\\)', 'st.error\\(\\\\\"Follow-Up Required\\\\\"\\)'\\),\n]\n\nfor old, new in replacements:\n    content = content.replace\\(old, new\\)\n\nwith open\\('pages/2_Chat_Detail.py', 'w', encoding='utf-8'\\) as f:\n    f.write\\(content\\)\nprint\\('Done'\\)\n\" 2>&1)",
+      "Bash(ls \"C:/Users/afif/Desktop/Claude Projects/\" && node --version && npm --version 2>/dev/null || echo \"node/npm not found\")",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && npm install 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && timeout 8 node -e \"\nconst db = require\\('./database.js'\\);\nconsole.log\\('DB OK — stats:', JSON.stringify\\(db.getLeadStats\\(\\)\\)\\);\n\" 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && timeout 8 node -e \"\nconst { analyzeText } = require\\('./gemini.js'\\);\nanalyzeText\\('bde a3mel bne2 bel dbaye, 5 floors, concrete needed'\\).then\\(r => {\n  console.log\\('Gemini OK:', JSON.stringify\\(r, null, 2\\)\\);\n}\\).catch\\(e => console.error\\('Gemini error:', e.message\\)\\);\n\" 2>&1)",
+      "Bash(node -e \"\nconst db = require\\('./database.js'\\);\nconsole.log\\('database.js loaded OK'\\);\nconsole.log\\('exports:', Object.keys\\(db\\)\\);\n\" 2>&1 || echo \"ERROR in database.js\")",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && node -e \"\nconst g = require\\('./gemini.js'\\);\nconsole.log\\('gemini.js loaded OK'\\);\nconsole.log\\('exports:', Object.keys\\(g\\)\\);\n\" 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && node -e \"\nconst db = require\\('./database.js'\\);\nconsole.log\\('database.js loaded OK'\\);\nconsole.log\\('exports:', Object.keys\\(db\\)\\);\nconst stats = db.getLeadStats\\(\\);\nconsole.log\\('stats:', JSON.stringify\\(stats\\)\\);\n\" 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && node -e \"\nconst r = require\\('./routes/leads.js'\\);\nconsole.log\\('routes/leads.js loaded OK'\\);\nconsole.log\\('type:', typeof r\\);\n\" 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && node -e \"\n// Quick check that all public JS files are valid syntax\nconst fs = require\\('fs'\\);\nconst vm = require\\('vm'\\);\n['public/app.js','public/followups.js','public/risk.js'].forEach\\(f => {\n  try {\n    new vm.Script\\(fs.readFileSync\\(f,'utf8'\\)\\);\n    console.log\\(f + ': OK'\\);\n  } catch\\(e\\) {\n    console.error\\(f + ': SYNTAX ERROR -', e.message\\);\n  }\n}\\);\n\" 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && node -e \"\nconst fs = require\\('fs'\\);\nconst files = [\n  'gemini.js',\n  'database.js',\n  'whatsapp.js',\n  'routes/leads.js',\n  'public/style.css',\n  'public/index.html',\n  'public/app.js',\n  'public/followups.html',\n  'public/followups.js',\n  'public/risk.html',\n  'public/risk.js',\n  'public/map.html'\n];\nfiles.forEach\\(f => {\n  const ok = fs.existsSync\\(f\\);\n  const size = ok ? fs.statSync\\(f\\).size : 0;\n  console.log\\(\\(ok ? 'OK' : 'MISSING'\\) + '  ' + f.padEnd\\(26\\) + \\(ok ? size + ' bytes' : ''\\)\\);\n}\\);\n\" 2>&1)",
+      "Bash(cd \"C:/Users/afif/Desktop/Claude Projects/whatsapp-leads\" && node -e \"require\\('./database.js'\\); console.log\\('DB OK'\\)\" 2>&1 && node -e \"require\\('./routes/leads.js'\\); console.log\\('Routes OK'\\)\" 2>&1)",
+      "Bash(netstat -ano | grep \":3000\" | grep LISTENING)",
+      "Bash(cd:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}

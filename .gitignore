@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.txt
+venv/
+.streamlit/
+data/assistant.db*
+logs/
+.wwebjs_auth/
+node_modules/
+.DS_Store
+*.log
