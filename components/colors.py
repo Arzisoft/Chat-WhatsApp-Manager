@@ -39,7 +39,7 @@ DARK = {
     'info': '#7A8FA3',              # Slate
 }
 
-# Product name and branding (no more TopCrete!)
+# Product name and branding (no more ChatChaos!)
 PRODUCT_NAME = "Sales Intelligence"
 PRODUCT_TAGLINE = "Chat Analytics & Pipeline Management"
 PRODUCT_DESCRIPTION = "Professional AI-powered sales analytics and chat management platform"
@@ -70,3 +70,4 @@ FONT_XL = '20px'
 FONT_2XL = '24px'
 FONT_3XL = '32px'
 FONT_4XL = '40px'
+

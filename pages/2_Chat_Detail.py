@@ -45,7 +45,7 @@ section[data-testid="stMain"] { font-size: 13px !important; }
 """
 
 init_db()
-st.set_page_config(page_title="Chat Detail | TopCrete", page_icon=None, layout="wide")
+st.set_page_config(page_title="Chat Detail | ChatChaos", page_icon=None, layout="wide")
 apply_brand()
 st.markdown(_CSS, unsafe_allow_html=True)
 page_header("Chat Detail", "Project intelligence & message history")
@@ -724,7 +724,7 @@ with tab_messages:
         media_path = msg['media_path']        if 'media_path'        in msg.keys() else None
         attached   = msg['attached_filename'] if 'attached_filename' in msg.keys() else None
 
-        is_outgoing = 'topcrete' in sender.lower()
+        is_outgoing = 'ChatChaos' in sender.lower()
         is_arabic   = any('\u0600' <= c <= '\u06ff' for c in body)
         rtl_style   = 'direction:rtl;text-align:right;' if is_arabic else ''
 
@@ -855,6 +855,7 @@ with tab_messages:
                     f"</div></div>",
                     unsafe_allow_html=True,
                 )
+
 
 
 

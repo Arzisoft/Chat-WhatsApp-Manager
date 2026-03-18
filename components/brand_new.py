@@ -1,7 +1,7 @@
 """
 Sales Intelligence platform - generic, professional brand system.
-Replaces TopCrete-specific branding.
-No longer TopCrete-specific - works for B2B SaaS clients.
+Replaces ChatChaos-specific branding.
+No longer ChatChaos-specific - works for B2B SaaS clients.
 """
 
 import streamlit as st
@@ -16,7 +16,7 @@ PRODUCT_DESCRIPTION = "Analyze, track, and act on business conversations with AI
 
 def apply_brand_new() -> None:
     """
-    Apply professional brand theming (replaces TopCrete-specific styling).
+    Apply professional brand theming (replaces ChatChaos-specific styling).
     Call once per page after st.set_page_config().
     """
     # Initialize theme
@@ -299,3 +299,4 @@ def render_step_guide(
     """
     
     st.markdown(section_html, unsafe_allow_html=True)
+

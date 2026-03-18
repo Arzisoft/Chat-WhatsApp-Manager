@@ -11,7 +11,7 @@
       "Bash(./venv/Scripts/pip install:*)",
       "Bash(curl:*)",
       "Bash(./venv/Scripts/python.exe:*)",
-      "WebFetch(domain:www.topcrete.com)",
+      "WebFetch(domain:www.ChatChaos.com)",
       "Bash(rm:*)",
       "Bash(venv/Scripts/python.exe:*)",
       "Bash(taskkill:*)",
@@ -39,3 +39,4 @@
     ]
   }
 }
+

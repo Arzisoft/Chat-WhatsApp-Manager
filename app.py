@@ -1,7 +1,7 @@
 """
 Sales Intelligence Platform - Professional Demo
 Main entry point: global dashboard with KPI cards and modern UI.
-NO TopCrete branding - fully generic, client-ready design.
+NO ChatChaos branding - fully generic, client-ready design.
 """
 
 import os
@@ -368,5 +368,6 @@ st.markdown(
     f"</div>",
     unsafe_allow_html=True
 )
+
 
 

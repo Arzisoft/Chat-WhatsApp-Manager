@@ -13,7 +13,7 @@ from typing import Optional, List, Dict, Any
 
 from core.models import ParsedChat
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'assistant.db')
+DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'chatchaos.db')
 
 
 # ── Connection ───────────────────────────────────────────────────────────────
@@ -959,3 +959,4 @@ def get_distinct_categories() -> List[str]:
             "WHERE category IS NOT NULL ORDER BY category"
         ).fetchall()
         return [r[0] for r in rows]
+

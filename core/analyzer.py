@@ -1,6 +1,6 @@
 """
 Gemini AI analyzer for WhatsApp chats.
-Extracts business intelligence for TopCrete International from Lebanese market conversations.
+Extracts business intelligence for ChatChaos International from Lebanese market conversations.
 """
 
 import os
@@ -145,7 +145,7 @@ def _truncate(text: str) -> str:
 
 # ── Prompts ───────────────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """You are an expert business intelligence assistant for TopCrete International,
+SYSTEM_PROMPT = """You are an expert business intelligence assistant for ChatChaos International,
 a Lebanese concrete and construction materials company. Your role is to analyze WhatsApp
 conversation exports and extract structured commercial intelligence from client, contractor,
 and project communications.
@@ -170,12 +170,12 @@ GEOGRAPHY — CRITICAL RULE:
 - Lebanese area taxonomy (all in Lebanon):
 """ + ', '.join(AREA_TAXONOMY) + """
 
-TOPCRETE INTERNATIONAL BUSINESS CONTEXT:
+ChatChaos INTERNATIONAL BUSINESS CONTEXT:
 - Products: ready-mix concrete, precast elements, concrete blocks, construction materials
 - Volumes measured in cubic meters (m³ / متر مكعب / ميتر مكعب)
 - Prices typically in USD (Lebanese economy is dollarized post-2019 crisis)
 - Customers: contractors (مقاول), developers, project managers, distributors/dealers
-- Delivery: TopCrete delivers to construction sites; delivery scheduling is critical
+- Delivery: ChatChaos delivers to construction sites; delivery scheduling is critical
 - Mix specs: B250, B300, B350, B400; slump values (usually 10-16cm); additives; pump concrete
 - "Kasser" / كسر = concrete strength test failure — CRITICAL urgency
 - "Tarikh teslim" / تاريخ التسليم = delivery date — track carefully
@@ -186,7 +186,7 @@ CONTACT ROLES:
 - Contractor / مقاول: executes construction work, orders concrete
 - Developer / مطور: project owner/investor, approves large orders
 - Project Manager / مهندس موقع: on-site manager, coordinates deliveries
-- Dealer / وكيل: resells TopCrete products, represents a region
+- Dealer / وكيل: resells ChatChaos products, represents a region
 - Architect / مهندس: designs projects, specifies mix grades
 - Engineer: structural/civil engineer, approves specs
 
@@ -372,3 +372,4 @@ def _parse_response(raw: str) -> Dict[str, Any]:
         data.setdefault(k, v)
 
     return data
+

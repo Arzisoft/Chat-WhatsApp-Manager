@@ -1,7 +1,7 @@
 {
-  "name": "topcrete-wa-bridge",
+  "name": "ChatChaos-wa-bridge",
   "version": "1.0.0",
-  "description": "WhatsApp Web bridge for TopCrete Intelligence",
+  "description": "WhatsApp Web bridge for ChatChaos Intelligence",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -12,3 +12,4 @@
     "whatsapp-web.js": "^1.23.0"
   }
 }
+

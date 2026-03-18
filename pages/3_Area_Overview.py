@@ -63,9 +63,9 @@ def _best_phone(ct_phone, chat_name) -> str:
 
 init_db()
 
-st.set_page_config(page_title="Area Overview | TopCrete", page_icon=None, layout="wide")
+st.set_page_config(page_title="Area Overview | ChatChaos", page_icon=None, layout="wide")
 apply_brand()
-page_header("Area Overview", "Geographic breakdown of TopCrete's project pipeline across Lebanon")
+page_header("Area Overview", "Geographic breakdown of ChatChaos's project pipeline across Lebanon")
 
 area_stats = get_area_stats()
 
@@ -275,5 +275,6 @@ df = pd.DataFrame([{
 } for a in sorted_areas])
 
 st.dataframe(df, use_container_width=True, hide_index=True)
+
 
 

@@ -1,6 +1,6 @@
 """
 Professional brand theme for Sales Intelligence platform.
-Removed all TopCrete branding - now generic, client-ready.
+Removed all ChatChaos branding - now generic, client-ready.
 Call apply_brand() at the top of every page (after set_page_config).
 """
 
@@ -311,7 +311,7 @@ def page_header(title, subtitle="", icon=""):
 def logo_html(size='small'):
     """
     Get HTML for brand logo.
-    Default: generic placeholder since TopCrete logo removed.
+    Default: generic placeholder since ChatChaos logo removed.
     
     Args:
         size: 'small', 'medium', or 'large'
@@ -344,9 +344,10 @@ def logo_html(size='small'):
     """
 
 def product_name():
-    """Get the product name (no TopCrete!)."""
+    """Get the product name (no ChatChaos!)."""
     return PRODUCT_NAME
 
 def product_tagline():
     """Get the product tagline."""
     return PRODUCT_TAGLINE
+

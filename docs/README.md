@@ -76,7 +76,7 @@ Automatically extracts from messages:
 
 ## Database
 
-SQLite database: `db/topcrete.db`
+SQLite database: `db/ChatChaos.db`
 
 **Tables:**
 - `chats`  Chat metadata + extraction results
@@ -155,7 +155,7 @@ E:\Client Products\ChatChaos-WhatsApp-Manager\
     package.json
     node_modules/
  db/                             # SQLite database
-    topcrete.db
+    ChatChaos.db
  .streamlit/                     # Streamlit config
     config.toml
  requirements.txt                # Python deps
@@ -288,7 +288,7 @@ streamlit run app.py --logger.level=error
 ### Database locked
 ```bash
 # Close all connections and restart
-rm db/topcrete.db
+rm db/ChatChaos.db
 streamlit run app.py
 ```
 
@@ -303,4 +303,5 @@ Internal use only.
 **Status:** Production-Ready  
 **Last Updated:** March 2026  
 **Tech Level:** Professional B2B SaaS
+
 

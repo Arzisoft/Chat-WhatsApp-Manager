@@ -1,5 +1,5 @@
 /**
- * TopCrete WhatsApp Bridge
+ * ChatChaos WhatsApp Bridge
  * Uses whatsapp-web.js (no Selenium scraping) to provide a clean REST API
  * for the Streamlit app to consume.
  *
@@ -276,3 +276,4 @@ process.on('SIGTERM', () => {
 });
 
 console.log('[bridge] Ready for graceful shutdown (SIGTERM)');
+

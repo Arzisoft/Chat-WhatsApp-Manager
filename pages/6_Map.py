@@ -13,7 +13,7 @@ from components.brand import apply_brand, page_header
 from components.colors import LIGHT, DARK
 init_db()
 
-st.set_page_config(page_title="Map | TopCrete", page_icon=None, layout="wide")
+st.set_page_config(page_title="Map | ChatChaos", page_icon=None, layout="wide")
 apply_brand()
 page_header("Project Map", "Lebanon — delivery sites & project locations")
 
@@ -303,6 +303,7 @@ with detail_col:
                 f"</div></div>",
                 unsafe_allow_html=True,
             )
+
 
 
 

@@ -1,5 +1,5 @@
 {
-  "project": "TopCrete Intelligence - UI & Video Assets",
+  "project": "ChatChaos Intelligence - UI & Video Assets",
   "date_created": "2026-03-18",
   "status": "READY_FOR_UPLOAD",
   "quality": "Professional",
@@ -59,7 +59,7 @@
     
     "videos": {
       "walkthrough": {
-        "name": "topcrete-walkthrough.mp4",
+        "name": "ChatChaos-walkthrough.mp4",
         "type": "Full UI Walkthrough",
         "duration_seconds": 30,
         "resolution": "1920x1080",
@@ -71,7 +71,7 @@
       },
       
       "tiktok_promo": {
-        "name": "topcrete-promo-tiktok.mp4",
+        "name": "ChatChaos-promo-tiktok.mp4",
         "type": "Social Media Promo - TikTok",
         "duration_seconds": 60,
         "resolution": "1080x1920",
@@ -86,7 +86,7 @@
       },
       
       "linkedin_promo": {
-        "name": "topcrete-promo-linkedin.mp4",
+        "name": "ChatChaos-promo-linkedin.mp4",
         "type": "Social Media Promo - LinkedIn",
         "duration_seconds": 60,
         "resolution": "1920x1080",
@@ -136,10 +136,11 @@
   
   "delivery_status": "COMPLETE",
   "next_steps": [
-    "Upload topcrete-walkthrough.mp4 to YouTube",
-    "Upload topcrete-promo-tiktok.mp4 to TikTok",
-    "Upload topcrete-promo-linkedin.mp4 to LinkedIn",
+    "Upload ChatChaos-walkthrough.mp4 to YouTube",
+    "Upload ChatChaos-promo-tiktok.mp4 to TikTok",
+    "Upload ChatChaos-promo-linkedin.mp4 to LinkedIn",
     "Share screenshots in marketing materials",
     "Organize files by social platform in E:\\Client Products\\TP\\assets\\"
   ]
 }
+
